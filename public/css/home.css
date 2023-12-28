@@ -1,0 +1,700 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.nav-small {
+    background-color: #252F3D;
+    height: 50px;
+}
+
+.nav-small ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style-type: none;
+    height: 100%;
+}
+
+.nav-small ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-medium {
+    background-color: #252F3D;
+    display: none;
+    font-size: 0.75rem;
+    height: 50px;
+}
+
+.nav-medium ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style-type: none;
+    gap: 1rem;
+    height: 100%;
+}
+
+.nav-medium ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+.nav-medium ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.chevron {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#text {
+    flex-grow: 1;
+    text-align: center;
+    font-size: .7rem;
+    padding-right: .3rem;
+    padding-left: .3rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.header-logos {
+    box-shadow: 0px 24px 24px 0px #0F1D0B0A;
+    padding: 1rem;
+    width: 100%;
+    height: 5rem;
+}
+
+.header-logos .header-logos-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+
+}
+
+.header-logos .header-logos-container .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+.header-text h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+.header-text h2 {
+    text-align: center;
+    font-size: 1rem;
+    color: #4D5254;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.progress-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.progress-status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+.progress-status-item img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: .4rem;
+}
+
+.product-header-text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.product-header-text span {
+    color: #2C7EF8;
+}
+
+.progress-status-icon {
+    margin-bottom: .4rem;
+}
+
+.product-benefit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.product-benefit-md {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+
+}
+
+.product-benefit div {
+    width: 100%;
+    height: max-content;
+}
+
+.product-benefit img {
+    width: 100%;
+}
+
+.product-benefit-md div {
+    width: 100%;
+    height: max-content;
+}
+
+.product-benefit-md .benefit-img {
+    width: 100%;
+}
+
+.comment-section {
+    margin-top: 2rem;
+}
+
+.comment-section .user-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.user-detail .user-rating {
+    display: flex;
+    gap: .4rem;
+}
+
+.user-status {
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+}
+
+.user-status h3 {
+    min-width: max-content;
+}
+
+.verified {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.comment {
+    color: #4D5254;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
+.user-rating-2 {
+    display: flex;
+    gap: .5rem;
+
+}
+
+.user-rating-2 img {
+    width: 11.95px;
+}
+
+.product-rate-price {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+
+.product-rate-price .product-left .product-image img {
+    width: 5rem;
+}
+
+.product-rate-price .name-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: .5rem;
+    width: 100%;
+
+}
+
+
+.product-rate-price .product-price-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.product-rate-price .before {
+    font-size: 0.65rem;
+    color: #969696;
+    font-weight: 600;
+}
+
+.product-rate-price .now {
+    font-size: 0.85rem;
+    color: #969696;
+    font-weight: 600;
+    color: #2C7EF8;
+}
+
+.product-rate-price .product-name-price {
+    color: #000000;
+    font-weight: 400;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.product-rate-price .product-stock {
+    display: flex;
+    gap: .4rem;
+    font-size: 0.85rem;
+    color: #37465A;
+}
+
+.product-rate-price .product-rating {
+    display: flex;
+    color: #FFC000;
+    font-size: 0.6rem;
+    gap: .5rem;
+}
+
+.product-stock span {
+    color: #37465A;
+}
+
+
+.product-stock .dot-icon {
+    color: #2C7EF8;
+}
+
+.product-use-sm {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #4D5254;
+    text-align: center;
+}
+
+.product-use-md {
+    display: none;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #4D5254;
+    text-align: center;
+}
+
+.product-benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #4D5254;
+}
+
+.product-benefit-list>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-benefit-list span {
+    font-weight: 700;
+}
+
+.product-benefit-list img {
+    width: 12px;
+}
+
+.product-discount-section {
+    padding: 1rem;
+    background-color: #EDF3FD;
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.product-discount-section span {
+    color: #2C7EF8;
+}
+
+.discount-icon {
+    min-width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C7EF8;
+    color: white;
+    padding: .3rem;
+    font-size: .8rem;
+}
+
+.claim-button {
+    background-color: #59AE43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.claim-button:hover {
+    background-color: #448a33;
+
+
+}
+
+.shipping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border: 1px solid #CFCFCF;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.shipping .shipping-info {
+    text-align: center;
+    border-bottom: 1px solid #CFCFCF;
+    padding-bottom: .5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #4D5254;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.shipping .shipping-divider {
+    display: none;
+}
+
+
+.shipping .shipping-platforms {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.reject-text {
+    margin-top: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+    color: #F82C2C;
+}
+
+.more-info {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #4D5254;
+    font-size: 0.75rem;
+}
+
+.more-info span {
+    font-weight: 700;
+}
+
+footer {
+    background-color: #252F3D;
+}
+
+.footer-content {
+
+    height: 6.3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-content span {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content img {
+    margin-right: .4rem;
+}
+
+.flex-container {
+    margin-top: 2rem;
+}
+
+
+/* media queries */
+
+
+
+
+@media screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .product-benefit {
+        display: none;
+    }
+
+    .product-benefit-md {
+        display: block;
+    }
+
+    .nav-small {
+        display: none;
+    }
+
+    .nav-medium {
+        display: block;
+    }
+
+    .product-discount-section {
+        justify-content: start;
+    }
+
+    .product-rate-price .product-left .product-image img {
+        width: 8.375rem;
+        height: 8.375rem;
+    }
+
+    .header-logos .header-logos-container .left img {
+        width: 192px;
+        height: 32px;
+    }
+
+    .header-logos .header-logos-container .right img {
+        width: 70px;
+        height: 32px;
+    }
+
+    .shipping {
+        flex-direction: row;
+        gap: .5rem;
+        align-items: center;
+    }
+
+    .shipping .shipping-platforms {
+        margin-top: 0;
+        border: none;
+    }
+
+    .shipping .shipping-divider {
+        display: block;
+        color: #969696;
+        font-size: 12px;
+    }
+
+    .shipping .shipping-info {
+        border-bottom: none;
+        padding-bottom: 0;
+
+
+    }
+
+    .product-use-sm {
+        display: none;
+    }
+
+    .product-use-md {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .header-text h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .header-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .product-benefit-list {
+        font-size: 1.2rem;
+    }
+
+    .product-header-text {
+        font-size: 2rem;
+    }
+
+    .progress-status-item {
+        font-size: 1rem;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .product-discount-section {
+        font-size: 1rem;
+    }
+
+    .claim-button {
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    .shipping .shipping-info {
+        font-size: 0.75rem;
+    }
+
+    .reject-text {
+        font-size: 1.125rem;
+
+    }
+
+    .more-info {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        font-size: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .product-rate-price .product-name-price {
+        font-size: 1.25rem;
+    }
+
+    .product-rate-price .product-stock {
+        font-size: 1rem;
+    }
+
+    .product-rate-price .product-rating {
+        font-size: 1.125rem;
+    }
+
+    .product-rate-price .product-price-section .before {
+        font-size: 1rem;
+    }
+
+    .product-rate-price .product-price-section .now {
+        font-size: 1.37rem;
+    }
+
+    .product-use-md {
+        font-size: 1rem;
+    }
+
+    .progress-status-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: .4rem;
+    }
+
+    .product-benefit-list img {
+        width: 18px;
+    }
+
+
+}
