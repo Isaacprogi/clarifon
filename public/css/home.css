@@ -11,7 +11,7 @@ body {
 
 main {
     padding: 1rem;
-    max-width: 1300px;
+    max-width: 1300px !important;
     margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ main {
     justify-content: space-between;
     color: #fff;
     padding: 10px;
-    max-width: 1300px;
+    max-width: 1300px !important;
     margin: 0 auto;
     list-style-type: none;
     height: 100%;
@@ -49,7 +49,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    max-width: 1300px;
+    max-width: 1300px !important;
     margin: 0 auto;
     list-style-type: none;
     gap: 1rem;
@@ -95,7 +95,7 @@ main {
 }
 
 .header-logos .header-logos-container {
-    max-width: 1300px;
+    max-width: 1300px !important;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -504,7 +504,7 @@ footer {
     font-weight: 400;
     color: white;
     text-align: center;
-    max-width: 1300px;
+    max-width: 1300px !important;
     margin: 0 auto;
 }
 
